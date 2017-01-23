@@ -62,6 +62,9 @@ namespace TestCategoryProject
 
             if (env.IsDevelopment())
             {
+                //app.UseStatusCodePages(); //works fine
+                //app.UseExceptionHandler("/Home/Error"); //<<---not working
+
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
                 app.UseBrowserLink();
